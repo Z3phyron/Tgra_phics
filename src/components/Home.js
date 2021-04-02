@@ -3,9 +3,7 @@ import styled from 'styled-components'
 import happy from './images/Happy.svg'
 import { motion } from 'framer-motion'
 import {pageAnimation} from './Animation'
-import circle from './images/circle.svg'
-import star from './images/star.svg'
-import rect from './images/rect.svg'
+
 
 const Home = () => {
 
@@ -68,14 +66,7 @@ const Home = () => {
       
         
             <HomeStyle exit="exit" variants={pageAnimation} initial="hidden" animate="show" className="home-content">
-                <Background>
-                  <img src={circle} alt="" className="circle"/>
-                  <img src={star} alt="" className="star"/>
-                  <img src={rect} alt="" className="rect"/>
-                  <img src={circle} alt="" className="circle2"/>
-                  <img src={star} alt="" className="star2"/>
-                  <img src={rect} alt="" className="rect2"/>
-                </Background>
+                
                   <motion.div variants={Container}
                   initial="hidden"
                   animate="show">
@@ -104,94 +95,6 @@ const Home = () => {
     )
 }
 
-const Background = styled.div`
-  position: fixed;
-  top:0;
-  left: 0;
-  z-index: 4;
-
-  .circle {
-    position: fixed;
-    left: 40%;
-    top: 25vh;
-    width: 30px;
-    animation: spin;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  .star {
-    position: fixed;
-    left: 5%;
-    bottom: 17vh;
-    animation: spin;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-
-  .rect {
-    position: fixed;
-    right: 10%;
-    top: 27vh;
-    animation: spin;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  .rect2{
-    position: fixed;
-    left: 50%;
-    bottom: 10vh;
-    animation: turn;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  .circle2 {
-    position: fixed;
-    right: 35%;
-    bottom: 10vh;
-    animation: turn;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  .star2 {
-    position: fixed;
-    right: 30px;
-    bottom: 27vh;
-    animation: turn;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-
-      @-moz-keyframes spin {
-        from { -moz-transform: rotate(0deg); }
-        to { -moz-transform: rotate(360deg); }
-    }
-    @-webkit-keyframes spin {
-        from { -webkit-transform: rotate(0deg); }
-        to { -webkit-transform: rotate(360deg); }
-    }
-    @keyframes spin {
-        from {transform:rotate(0deg);}
-        to {transform:rotate(360deg);}
-    }
-      @-moz-keyframes turn {
-        from { -moz-transform: rotate(0deg); }
-        to { -moz-transform: rotate(-360deg); }
-    }
-    @-webkit-keyframes turn {
-        from { -webkit-transform: rotate(0deg); }
-        to { -webkit-transform: rotate(-360deg); }
-    }
-    @keyframes turn {
-        from {transform:rotate(0deg);}
-        to {transform:rotate(-360deg);}
-    }
-`;
 
 const HomeStyle = styled(motion.div)`
   display: grid;
