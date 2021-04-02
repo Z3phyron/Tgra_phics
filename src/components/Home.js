@@ -108,11 +108,13 @@ const Background = styled.div`
   position: fixed;
   top:0;
   left: 0;
+  z-index: 4;
 
   .circle {
     position: fixed;
-    left: 35%;
+    left: 40%;
     top: 25vh;
+    width: 30px;
     animation: spin;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -120,7 +122,7 @@ const Background = styled.div`
   }
   .star {
     position: fixed;
-    left: 15%;
+    left: 5%;
     bottom: 17vh;
     animation: spin;
     animation-duration: 5s;
@@ -140,7 +142,7 @@ const Background = styled.div`
   .rect2{
     position: fixed;
     left: 50%;
-    bottom: 27vh;
+    bottom: 10vh;
     animation: turn;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -157,7 +159,7 @@ const Background = styled.div`
   }
   .star2 {
     position: fixed;
-    right: 50px;
+    right: 30px;
     bottom: 27vh;
     animation: turn;
     animation-duration: 5s;
@@ -200,6 +202,7 @@ const HomeStyle = styled(motion.div)`
   padding: 100px;
   margin-top: 60px;
   justify-content: space-between;
+  z-index: 5;
 
   @media (max-width: 1068px) {
     padding: 100px 40px;
