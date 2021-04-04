@@ -15,12 +15,12 @@ const Contact = () => {
                     </a>
                  </div>   
                 <div className="social-item">
-                    <a href="https://facebook.com" className="icons">
+                    <a href="https://twitter.com" className="icons">
                         <FaTwitter/>
                     </a>
                  </div>   
                 <div className="social-item">
-                    <a href="https://facebook.com" className="icons">
+                    <a href="https://instagram.com" className="icons">
                         <FaInstagram/>
                     </a>
                  </div> 
