@@ -19,7 +19,9 @@ const Nav = () => {
     return (
         <Header>
             <Logo>
+              <Link to="/">
               <img src={logo} alt=""/>
+              </Link>
             </Logo>
             <Toggle onClick={handleClick}>
               {click ? <FaTimes/> : <FaBars/>}
