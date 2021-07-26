@@ -81,7 +81,11 @@ const Portfolio = () => {
             marketing strategies and campaigns; accustomed to performing in
             deadline-driven environments with an emphasis on working within
             budget requirements.
-            
+            <br />
+            <br />
+            While graphic design and innovation are my two passions, I also
+            enjoy games,music and exploring other things world. I am insanely
+            curious about what the world has to offer
           </motion.p>
         </motion.div>
 

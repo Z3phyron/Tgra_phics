@@ -5,33 +5,56 @@ import { motion } from 'framer-motion'
 import {pageAnimation} from './Animation'
 
 const Contact = () => {
+      const TextAnim = {
+        hidden: {
+          x: -1000,
+        },
+        show: {
+          x: 0,
+          transition: {
+            duration: 1.5,
+          },
+        },
+      };
     return (
-        <ContactPage variants={pageAnimation}  exit="exit" initial="hidden" animate="show"  >
-            <SocialPage>
-               <Items>
-               <div className="social-item">
-                    <a href="https://facebook.com" className="icons">
-                        <FaFacebookF/>
-                    </a>
-                 </div>   
-                <div className="social-item">
-                    <a href="https://twitter.com" className="icons">
-                        <FaTwitter/>
-                    </a>
-                 </div>   
-                <div className="social-item">
-                    <a href="https://instagram.com" className="icons">
-                        <FaInstagram/>
-                    </a>
-                 </div> 
-               </Items> 
-               <div className="email">
-                    <a href="mailto:Phakeemakintola@gmail.com">@ Phakeemakintola@Gmail.com</a>
-                </div>  
-                   
-            </SocialPage>
-        </ContactPage>
-    )
+      <ContactPage
+        variants={pageAnimation}
+        exit="exit"
+        initial="hidden"
+        animate="show"
+      >
+        <SocialPage>
+          <Items>
+                <motion.p variants={TextAnim} initial="hidden" animate="show">
+                    When you're ready for your brand to reach its next level of
+                success, you can hire me
+                </motion.p>
+             
+            
+            <div className="social-item">
+              <a href="https://facebook.com" className="icons">
+                <FaFacebookF />
+              </a>
+            </div>
+            <div className="social-item">
+              <a href="https://twitter.com" className="icons">
+                <FaTwitter />
+              </a>
+            </div>
+            <div className="social-item">
+              <a href="https://instagram.com" className="icons">
+                <FaInstagram />
+              </a>
+            </div>
+          </Items>
+          <div className="email">
+            <a href="mailto:Phakeemakintola@gmail.com">
+              @ Phakeemakintola@Gmail.com
+            </a>
+          </div>
+        </SocialPage>
+      </ContactPage>
+    );
 }
 
 const ContactPage = styled(motion.div)`
@@ -42,6 +65,8 @@ const ContactPage = styled(motion.div)`
   justify-content: center;
 
 `;
+
+
 const SocialPage = styled.div`
     display: flex;
     flex-direction: column;
