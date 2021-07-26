@@ -55,85 +55,79 @@ const Portfolio = () => {
     }
   }
     return (
-        <PortfolioStyle
-         variants={pageAnimation}
-         exit="exit" 
-         initial="hidden" 
-         animate="show">
-      <motion.div 
-      variants={Container} 
-      initial="hidden" 
-      animate="show"
-      class="title">
-        <motion.h1 variants={TitleAnim} initial='hidden' animate='show'>Some of my finest work</motion.h1>
-        <motion.p variants={TextAnim} initial='hidden' animate='show'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
-          iusto molestias accusamus rem nobis est, et laborum harum doloremque
-          nemo non, minima quos totam labore maxime iste alias ut esse? Repellat
-          eaque reiciendis laboriosam corporis fuga vero ratione veritatis
-          numquam, libero magni voluptatum omnis molestiae officiis
-          exercitationem qui quidem nam.
-        </motion.p>
-      </motion.div>
+      <PortfolioStyle
+        variants={pageAnimation}
+        exit="exit"
+        initial="hidden"
+        animate="show"
+      >
+        <motion.div
+          variants={Container}
+          initial="hidden"
+          animate="show"
+          class="title"
+        >
+          <motion.h1 variants={TitleAnim} initial="hidden" animate="show">
+            Some of my finest work
+          </motion.h1>
+          <motion.p variants={TextAnim} initial="hidden" animate="show">
+            Hi, I'm a Highly creative and multitalented Graphic Designer with
+            extensive experience in multimedia, marketing, and print design.
+            Exceptional collaborative and interpersonal skills; dynamic team
+            player with well-developed written and verbal communication
+            abilities. Highly skilled in client and vendor relations and
+            negotiations; talented at building and maintaining “win-win”
+            partnerships. Passionate and inventive creator of innovative
+            marketing strategies and campaigns; accustomed to performing in
+            deadline-driven environments with an emphasis on working within
+            budget requirements.
+            
+          </motion.p>
+        </motion.div>
 
-      <PortfolioItems>
-        <Item>
-          <img src={work1} alt="" />
-          
-        </Item>
-        <Item>
-          <img src={work2} alt="" />
-          
-        </Item>
-        <Item>
-          <img src={work3} alt="" />
-          
-        </Item>
-        <Item>
-          <img src={work4} alt="" />
-         
-        </Item>
-        <Item>
-          <img src={work5} alt="" />
-          
-        </Item>
-        <Item>
-          <img src={work6} alt="" />
-          
-        </Item>
-        <Item>
-          <img src={work7} alt="" />
-          
-        </Item>
-        <Item>
-          <img src={work8} alt="" />
-          
-        </Item>
-        <Item>
-          <img src={work9} alt="" />
-         
-        </Item>
-        <Item>
-          <img src={work10} alt="" />
-          
-        </Item>
-        <Item>
-          <img src={work11} alt="" />
-          
-        </Item>
-        <Item>
-          <img src={work12} alt="" />
-          
-        </Item>
-        <Item>
-          <img src={work13} alt="" />
-          
-        </Item>
-   
-        
-      </PortfolioItems>
-    </PortfolioStyle>
-    )
+        <PortfolioItems>
+          <Item>
+            <img src={work1} alt="" />
+          </Item>
+          <Item>
+            <img src={work2} alt="" />
+          </Item>
+          <Item>
+            <img src={work3} alt="" />
+          </Item>
+          <Item>
+            <img src={work4} alt="" />
+          </Item>
+          <Item>
+            <img src={work5} alt="" />
+          </Item>
+          <Item>
+            <img src={work6} alt="" />
+          </Item>
+          <Item>
+            <img src={work7} alt="" />
+          </Item>
+          <Item>
+            <img src={work8} alt="" />
+          </Item>
+          <Item>
+            <img src={work9} alt="" />
+          </Item>
+          <Item>
+            <img src={work10} alt="" />
+          </Item>
+          <Item>
+            <img src={work11} alt="" />
+          </Item>
+          <Item>
+            <img src={work12} alt="" />
+          </Item>
+          <Item>
+            <img src={work13} alt="" />
+          </Item>
+        </PortfolioItems>
+      </PortfolioStyle>
+    );
 }
 
 const PortfolioStyle = styled(motion.div)`

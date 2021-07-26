@@ -81,9 +81,7 @@ const Home = () => {
                         </motion.h1>
                       </Hide>
                       <motion.p variants={TextAnim} initial='hidden' animate='show'>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo itaque
-                      nam saepe vero voluptatem vel fuga a eaque earum alias ipsam
-                      aspernatur culpa maxime laboriosam, impedit quae officiis consectetur
+                      Highly creative and multitalented Graphic Designer with extensive experience in multimedia, marketing, and print design.
                       </motion.p>
                       <motion.Link variants={FadeAnim} initial="hidden" animate="show" class="btn">Hire me!</motion.Link>
                   </motion.div>
