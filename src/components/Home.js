@@ -63,34 +63,48 @@ const Home = () => {
   }
 
     return (
-      
-        
-            <HomeStyle exit="exit" variants={pageAnimation} initial="hidden" animate="show" className="home-content">
-                
-                  <motion.div variants={Container}
-                  initial="hidden"
-                  animate="show">
-                      <Hide>
-                        <motion.h1 variants={Left} initial="hidden" animate="show">
-                        Hi, i'm 
-                        </motion.h1>
-                      </Hide>
-                      <Hide>
-                        <motion.h1 variants={Left} initial="hidden" animate="show">
-                        Feyishayo Akintola
-                        </motion.h1>
-                      </Hide>
-                      <motion.p variants={TextAnim} initial='hidden' animate='show'>
-                      Highly creative and multitalented Graphic Designer with extensive experience in multimedia, marketing, and print design.
-                      </motion.p>
-                      <motion.Link variants={FadeAnim} initial="hidden" animate="show" class="btn">Hire me!</motion.Link>
-                  </motion.div>
-                  
-                  <div className="image">
-                      <img src={happy} alt=""/>
-                  </div>
-            </HomeStyle>
-    )
+      <HomeStyle
+        exit="exit"
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        className="home-content"
+      >
+        <motion.div variants={Container} initial="hidden" animate="show">
+          <Hide>
+            <motion.h1 variants={Left} initial="hidden" animate="show">
+              Hi, i'm
+            </motion.h1>
+          </Hide>
+          <Hide>
+            <motion.h1 variants={Left} initial="hidden" animate="show" className='title'>
+              Feyishayo Akintola
+            </motion.h1>
+          </Hide>
+          <motion.p
+            variants={TextAnim}
+            initial="hidden"
+            animate="show"
+            className="desc"
+          >
+            Highly creative and multitalented Graphic Designer with extensive
+            experience in multimedia, marketing, and print design.
+          </motion.p>
+          <motion.Link
+            variants={FadeAnim}
+            initial="hidden"
+            animate="show"
+            class="btn"
+          >
+            Hire me!
+          </motion.Link>
+        </motion.div>
+
+        <div className="image">
+          <img src={happy} alt="" />
+        </div>
+      </HomeStyle>
+    );
 }
 
 
@@ -105,30 +119,38 @@ const HomeStyle = styled(motion.div)`
   justify-content: space-between;
   z-index: 5;
 
+  @media (max-width: 568px) {
+    padding: 100px 20px;
+
+    .title {
+      font-size: 30px;
+    }
+
+    /* .desc {
+      text-align: justify;
+    } */
+  }
+
   @media (max-width: 1068px) {
     padding: 100px 40px;
     grid-template-columns: 1fr;
-    
-   }
- 
-    .home-content {
-      max-width: 550px;
-    }
+  }
 
-.image {
-    width:500px;
+  .home-content {
+    max-width: 550px;
+  }
+
+  .image {
+    width: 500px;
     @media (max-width: 1068px) {
       display: none;
+    }
+  }
 
-   }
-}
-
-  .image  img{
+  .image img {
     width: 100%;
     object-fit: cover;
-    
-    
-    }
+  }
 
   .btn {
     cursor: pointer;
@@ -140,7 +162,7 @@ const HomeStyle = styled(motion.div)`
     margin: 20px 0;
     border: 0;
   }
-  
+
   .btn:hover {
     transform: scale(0.98);
   }

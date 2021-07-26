@@ -70,7 +70,12 @@ const Portfolio = () => {
           <motion.h1 variants={TitleAnim} initial="hidden" animate="show">
             Some of my finest work
           </motion.h1>
-          <motion.p variants={TextAnim} initial="hidden" animate="show">
+          <motion.p
+            variants={TextAnim}
+            initial="hidden"
+            animate="show"
+            className="desc"
+          >
             Hi, I'm a Highly creative and multitalented Graphic Designer with
             extensive experience in multimedia, marketing, and print design.
             Exceptional collaborative and interpersonal skills; dynamic team
@@ -147,6 +152,10 @@ const PortfolioStyle = styled(motion.div)`
    }
    @media (max-width: 568px) {
     padding: 100px 20px;
+
+    .desc {
+      text-align: justify;
+    }
   }
 `;
 

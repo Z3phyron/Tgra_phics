@@ -24,11 +24,12 @@ const Contact = () => {
         animate="show"
       >
         <SocialPage>
-          <Items>
-                <motion.p variants={TextAnim} initial="hidden" animate="show">
-                    When you're ready for your brand to reach its next level of
+          <motion.p variants={TextAnim} initial="hidden" animate="show">
+                  When you're ready for your brand to reach its next level of
                 success, you can hire me
                 </motion.p>
+          <Items>
+                
              
             
             <div className="social-item">
@@ -72,7 +73,7 @@ const SocialPage = styled.div`
     flex-direction: column;
     justify-content: center;
     width: 100%;
- 
+  padding: 3%;
     align-items: center;
     height: 100%;
 
@@ -85,6 +86,16 @@ const SocialPage = styled.div`
     }
  }
     }
+
+    @media (max-width: 900px) {
+          p {
+          font-size: 16px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+    }
+
+    
 
 `;
 
